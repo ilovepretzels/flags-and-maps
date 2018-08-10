@@ -1,0 +1,36 @@
+body {
+  background: #C0C0C0;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.country {
+  max-width: 25em;
+  min-width: 15em;
+}
+
+.country img {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1200px)  {
+  .container {
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px)  {
+  .container {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px)  {
+  .container {
+    grid-template: 1fr / repeat(1, 1fr);
+  }
+}
